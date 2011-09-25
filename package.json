@@ -1,0 +1,20 @@
+{
+  "name": "lingua",
+  "description": "A i18n middleware for the express.js framework.",
+  "version": "0.0.3",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/akoenig/express-lingua.git"
+  },
+  "author": "André König <andre.koenig@gmail.com> (http://lochkartenstanzer.de)",
+  "main": "./lib/lingua.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "express": ">=2.3.10"
+  },
+  "engines": {
+    "node": ">=0.4.0"
+  }
+}
