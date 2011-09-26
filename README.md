@@ -48,16 +48,16 @@ Using lingua comes down with three simple steps:
     ```javascript
     // en.json
         {
-            title": "Hello World",
-            content": {
+            "title": "Hello World",
+            "content": {
                 "description": "A little description."
             }
         }
 
     // de-de.json
         {
-            title": "Hallo Welt",
-            content": {
+            "title": "Hallo Welt",
+            "content": {
                 "description": "Eine kleine Beschreibung."
             }
         }
@@ -65,8 +65,10 @@ Using lingua comes down with three simple steps:
 
 3. **Use lingua in your views** - Note that the syntax depends on your template engine. In this example it is: [jqtpl](https://github.com/kof/node-jqtpl) and the request comes from a browser which sends 'en' with the HTTP header.
 
+    ```html
     <h1>${lingua.title}</h1> <!-- out: <h1>Hello World</h1> -->
     <p>${lingua.content.description}</h1> <!-- out: <p>A little description.</p> -->
+    ```
 
 ## Example Application
 
