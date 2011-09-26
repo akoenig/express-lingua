@@ -11,6 +11,7 @@ Lingua is a middleware for the Express.js framework that helps you to internatio
 Using lingua comes down with three simple steps:
 
 1. **Grab lingua**
+
     ```javascript
 
     var express = require('express'),
