@@ -1,6 +1,6 @@
 # Lingua
 
-Lingua is a middleware for the Express.js framework that helps you to internationalise your webapp easily. It determines the language of the user agent and pushs the i18n resources to your views.
+Lingua is a middleware for the Express.js framework that helps you to internationalise your webapp easily. It determines the language of the user agent and pushes the i18n resources to your views.
 
 ## Installation
 
@@ -43,7 +43,7 @@ Using lingua comes down with three simple steps:
     });
     ```
 
-2. **Create i18n resource files** - Note that you have to create a resource file for your default language. (In this example: './i18n/de-de.json').
+2. **Create i18n resource files** - Note that you have to create a resource file for your default language. (In this example: './i18n/en.json').
 
     ```javascript
     // en.json
