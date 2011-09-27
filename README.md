@@ -63,7 +63,7 @@ Using lingua comes down with three simple steps:
         }
     ```
 
-3. **Use lingua in your views** - Note that the syntax depends on your template engine. In this example it is: [jqtpl](https://github.com/kof/node-jqtpl) and the request comes from a browser which sends 'en' with the HTTP header.
+3. **Use lingua in your views** - Note that the syntax depends on your template engine. In this example it is: [jqtpl](https://github.com/kof/node-jqtpl) and the request comes from a browser which sends 'en' with the HTTP request header.
 
     ```html
     <h1>${lingua.title}</h1> <!-- out: <h1>Hello World</h1> -->
