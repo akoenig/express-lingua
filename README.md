@@ -83,8 +83,6 @@ To run it:
 
 [MIT License](http://www.opensource.org/licenses/mit-license.php)
 
-Copyright (c) 2011, André König (andre.koenig -[at]- gmail [*dot*] com)
-
 ## Author
 
-[André König](http://lochkartenstanzer.de) ([Google+](http://gplus.name/andrekoenig))
+Copyright (c) 2011, [André König](http://lochkartenstanzer.de) ([Google+](http://+.lochkartenstanzer.de)) (andre.koenig -[at]- gmail [*dot*] com)
