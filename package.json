@@ -1,6 +1,6 @@
 {
   "name": "lingua",
-  "description": "A i18n middleware for the express.js framework.",
+  "description": "A i18n middleware for the Express.js framework.",
   "version": "0.0.4",
   "repository": {
     "type": "git",

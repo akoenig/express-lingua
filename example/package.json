@@ -1,5 +1,5 @@
 {
-    "name": "express lingua example app"
+    "name": "express-lingua example app"
   , "version": "0.0.1"
   , "private": true
   , "dependencies": {
