@@ -8,7 +8,7 @@ Lingua is a middleware for the Express.js framework that helps you to internatio
 
 ## Quick Start
 
-Using lingua comes down with three simple steps:
+Using lingua comes down with four simple steps:
 
 1. **Grab lingua**
 
@@ -69,6 +69,14 @@ Using lingua comes down with three simple steps:
     <h1>${lingua.title}</h1> <!-- out: <h1>Hello World</h1> -->
     <p>${lingua.content.description}</h1> <!-- out: <p>A little description.</p> -->
     ```
+
+4. **Let the user select a language** - Note that the user's selection is persisted within a cookie.
+
+    ```html
+    <a href="?lingua=de-DE">de-DE</a>
+    <a href="?lingua=en-US">en-US</a>
+    ```
+
 
 ## Example Application
 
