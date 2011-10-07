@@ -73,8 +73,8 @@ Using lingua comes down with four simple steps:
 4. **Let the user select a language** - Note that the user's selection is persisted within a cookie. This is an optional step. If you want to let lingua determine the user language from the browser configuration then leave this step out. Anyway, this is a very handy feature for switching the language by a user decision.
 
     ```html
-    <a href="?lingua=de-DE">de-DE</a>
-    <a href="?lingua=en-US">en-US</a>
+    <a href="?language=de-DE">de-DE</a>
+    <a href="?language=en-US">en-US</a>
     ```
 
 
