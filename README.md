@@ -87,6 +87,8 @@ To run it:
     $ cd example
     $ node app.js
 
+You can find a deployed version of this app [here](http://lingua-demoapp.lochkartenstanzer.de).
+
 ## License
 
 [MIT License](http://www.opensource.org/licenses/mit-license.php)
