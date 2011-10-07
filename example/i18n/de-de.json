@@ -1,7 +1,13 @@
 {
-	"title": "express-lingua",
+	"title": "express-lingua - demonstration app",
+    "navigation": {
+    	"german": "Deutsch",
+    	"english": "Englisch"
+    },
+
 	"index": {
-		"headline": "Eine Überschrift",
-		"description": "Dies ist eine Beispiel-Anwendung."
+		"headline": "Hallo.",
+		"subheadline": "Dies ist eine kleine App, welche die Funktionsweise von lingua demonstrieren soll.",
+		"licence": "MIT-Lizenz"
 	}
 }

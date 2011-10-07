@@ -13,7 +13,7 @@
  */
 
 var express = require('express'),
-    lingua = require('lingua');
+    lingua = require('../lib/lingua');
 
 var app = module.exports = express.createServer();
 
