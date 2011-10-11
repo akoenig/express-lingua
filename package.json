@@ -1,7 +1,7 @@
 {
   "name": "lingua",
   "description": "A i18n middleware for the Express.js framework.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "repository": {
     "type": "git",
     "url": "git://github.com/akoenig/express-lingua.git"
@@ -10,10 +10,6 @@
   "main": "./lib/lingua.js",
   "directories": {
     "lib": "lib"
-  },
-  "dependencies": {
-    "express": ">=2.3.10",
-    "cookies": ">= 0.1.6"
   },
   "engines": {
     "node": ">=0.4.0"
