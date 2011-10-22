@@ -1,7 +1,7 @@
 {
   "name": "lingua",
   "description": "A i18n middleware for the Express.js framework.",
-  "version": "0.2",
+  "version": "0.2.0",
   "repository": {
     "type": "git",
     "url": "git://github.com/akoenig/express-lingua.git"
