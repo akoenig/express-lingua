@@ -43,7 +43,7 @@ Using lingua comes down with four simple steps:
     });
     ```
 
-2. **Create i18n resource files** - Note that you have to create a resource file for your default language. (In this example: './i18n/en.json').
+2. **Create i18n resource files** - Note that you have to create a resource file for your default language. (In this example: './i18n/en.json' and './i18n/de-de.json').
 
     ```javascript
     // en.json
