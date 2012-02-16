@@ -37,17 +37,22 @@ app.configure(function(){
 });
 
 app.configure('development', function(){
-    app.use(express.errorHandler({ dumpExceptions: true, showStack: true })); 
+    app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
 });
 
 app.configure('production', function(){
-    app.use(express.errorHandler()); 
+    app.use(express.errorHandler());
 });
 
 // Routes
 
-app.get('/', function(req, res){
-    res.render('index');
+app.get('/', function(req, res) {
+    res.render('index', {
+        person: {
+            name: 'Thomas',
+            age: Math.round(Math.random()*100)
+        }
+    });
 });
 
 app.listen(3000);

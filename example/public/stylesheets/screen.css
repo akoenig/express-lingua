@@ -57,6 +57,10 @@ article h2 {
     line-height:1.3em
 }
 
+article p {
+	margin-top:50px;
+}
+
 footer {
 	bottom:10px;
 	position:absolute;

@@ -3,7 +3,7 @@
   , "version": "0.0.2"
   , "private": true
   , "dependencies": {
-      "express": "2.4.6"
+      "express": "2.5.8"
     , "jqtpl": ">= 1.0.0"
   }
 }

@@ -8,6 +8,7 @@
 	"index": {
 		"headline": "Hallo.",
 		"subheadline": "Dies ist eine kleine App, welche die Funktionsweise von lingua demonstrieren soll.",
-		"licence": "MIT-Lizenz"
+		"licence": "MIT-Lizenz",
+		"person": "Hallo {name}. Du bist {age} Jahre alt."
 	}
 }
