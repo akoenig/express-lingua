@@ -6,7 +6,7 @@
     },
 
 	"index": {
-		"headline": "Hello.",
+		"headline": "Hello. EN",
 		"subheadline": "This is a little app which should demonstrate the functionality of lingua.",
 		"licence": "MIT licence",
 		"person": "Hey {name}. You are {age} years old."
