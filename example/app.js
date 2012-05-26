@@ -47,7 +47,7 @@ app.configure('development', function () {
 // Routes
 
 app.get('/', function(req, res) {
-    var names = ['Valentina', 'Sarah', 'Thomas', 'Claudia'];
+    var names = ['Andrea', 'Sarah', 'Thomas', 'Claudia', 'Kimberly', 'Sam'];
 
     res.render('index', {
         person: {
