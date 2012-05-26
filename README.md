@@ -94,7 +94,7 @@ Using lingua comes down with four simple steps:
     });
     ```
 
-    And finally you can execute the i18n resource (yes, you can execute it(: ) and pass your data model to this function:
+    And finally you can execute the i18n resource (yes, you can execute it (: ) and pass your data model to this function:
 
     ```html
     <p><%= lingua.greeting(person) %></p>

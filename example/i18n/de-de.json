@@ -8,5 +8,5 @@
 	"headline": "Hallo.",
 	"subheadline": "Dies ist eine kleine App, welche die Funktionsweise von lingua demonstrieren soll.",
 	"licence": "MIT-Lizenz",
-	"person": "Hallo {name}. Dieser Schlüssel: {code} wurde für Dich generiert."
+	"greeting": "Hallo {name}. Dieser Schlüssel: {code} wurde für Dich generiert."
 }

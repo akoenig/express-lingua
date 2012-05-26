@@ -50,7 +50,7 @@ app.get('/', function(req, res) {
     var names = ['Valentina', 'Sarah', 'Thomas', 'Claudia'];
 
     res.render('index', {
-        personModel: {
+        person: {
             name: names[Math.floor(Math.random()*names.length)],
             code: Math.round(Math.random()*100)
         }
