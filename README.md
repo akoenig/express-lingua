@@ -24,9 +24,8 @@ Using lingua comes down with four simple steps:
     // Express app configuration code and lingua init.
     app.configure(function(){
         ...
-        app.register(".html", require("jqtpl").express);
         app.set('views', __dirname + '/views');
-        app.set("view engine", "html");
+        app.set('view engine', 'ejs');
 
         // Lingua configuration
         app.use(lingua(app, {

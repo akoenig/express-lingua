@@ -6,15 +6,15 @@
     "type": "git",
     "url": "git://github.com/akoenig/express-lingua.git"
   },
-  "author": "André König <andre.koenig@gmail.com> (http://lochkartenstanzer.de)",
+  "author": "André König <andre.koenig@gmail.com> (http://profile.lochkartenstanzer.de)",
   "main": "./lib/lingua.js",
   "directories": {
     "lib": "lib"
   },
   "dependencies": {
-    "cookies": ">= 0.1.6"
+    "cookies": "0.3.x"
   },
   "engines": {
-    "node": ">=0.4.0"
+    "node": ">= 0.6.x"
   }
 }
