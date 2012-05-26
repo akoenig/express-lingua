@@ -75,7 +75,7 @@ Using lingua comes down with four simple steps:
     ```javascript
     // de.json
     {
-    "greeting": "Hallo {name}. Dieser Schlüssel {code} wurde für Dich generiert."
+        "greeting": "Hallo {name}. Dieser Schlüssel {code} wurde für Dich generiert."
     }
     ```
 
