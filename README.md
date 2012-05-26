@@ -70,7 +70,7 @@ Using lingua comes down with four simple steps:
     <p><%= lingua.content.description %></h1> <!-- out: <p>A little description.</p> -->
     ```
 
-3. b) **Use lingua in your views - Dynamic output** - Sometimes it is necessary to handle dynamic data within your express route and to pass it to the template. What if your text i18n resource is able to keep placeholders within a string where you can include your dynamic data? Well, it is possible. First of all, look at this i18n resource file:
+3. b) **Use lingua in your views - Dynamic output** - Sometimes it is necessary to handle dynamic data within your express route and to pass it to the template. What if your i18n resource includes placeholders within a string where you can put in your dynamic data? Well, it is possible. First of all, look at this i18n resource file:
 
     ```javascript
     // de.json
