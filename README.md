@@ -70,17 +70,16 @@ Using lingua comes down with four simple steps:
     <p><%= lingua.content.description %></h1> <!-- out: <p>A little description.</p> -->
     ```
 
-3. b) **Use lingua in your views - Dynamic output** - Sometimes it is necessary to handle dynamic data within your express route and to pass it to the template. What if your text i18n resource is able to keep placeholders within a string where you can include your dynamic data? Well, it is possible.
-
-First of all, look at this i18n resource file:
+3. b) **Use lingua in your views - Dynamic output** - Sometimes it is necessary to handle dynamic data within your express route and to pass it to the template. What if your text i18n resource is able to keep placeholders within a string where you can include your dynamic data? Well, it is possible. First of all, look at this i18n resource file:
 
     ```javascript
     // de.json
     {
     "greeting": "Hallo {name}. Dieser Schlüssel {code} wurde für Dich generiert."
     }
+    ```
 
-Now it is possible to transfer an object from your route into your template:
+    Now it is possible to transfer an object from your route into your template:
 
     ```javascript
     app.get('/', function(req, res) {
@@ -93,13 +92,13 @@ Now it is possible to transfer an object from your route into your template:
             }
         });
     });
+    ```
 
-And finally in your template you can use the "lingua compiler" -> "linguac"
+    And finally you can use the "lingua compiler" -> "linguac" in your template:
 
     ```html
     <p><%= linguac(lingua.greeting, person) %></p>
- 
-
+    ```
 
 4. **Let the user select a language** - Note that the user's selection is persisted within a cookie. This is an optional step. If you want to let lingua determine the user language from the browser configuration then leave this step out. Anyway, this is a very handy feature for switching the language by a user decision.
 
