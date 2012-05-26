@@ -83,7 +83,7 @@ Using lingua comes down with four simple steps:
 
     ```javascript
     app.get('/', function(req, res) {
-        var names = ['Valentina', 'Sarah', 'Thomas', 'Claudia'];
+        var names = ['Sarah', 'Thomas', 'Claudia'];
 
         res.render('index', {
             person: {
