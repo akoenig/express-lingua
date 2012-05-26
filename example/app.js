@@ -13,7 +13,7 @@
  */
 
 var express = require('express')
-  //, lingua = require('../lib/lingua')
+  , lingua = require('../lib/lingua')
   , http = require('http');
 
 var app = express();
@@ -27,10 +27,10 @@ app.configure(function () {
     app.set('view engine', 'ejs');
 
     // Lingua configuration
-    /*app.use(lingua(app, {
+    app.use(lingua(app, {
         defaultLocale: 'de-de',
         path: __dirname + '/i18n'
-    }));*/
+    }));
 
     app.use(express.favicon());
     app.use(express.logger('dev'));
