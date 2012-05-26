@@ -47,10 +47,12 @@ app.configure('development', function () {
 // Routes
 
 app.get('/', function(req, res) {
+    var names = ['Valentina', 'Sarah', 'Thomas', 'Claudia'];
+
     res.render('index', {
         person: {
-            name: 'Thomas',
-            age: Math.round(Math.random()*100)
+            name: names[Math.floor(Math.random()*names.length)],
+            code: Math.round(Math.random()*100)
         }
     });
 });
