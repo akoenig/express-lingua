@@ -30,7 +30,7 @@ app.configure(function () {
     app.use(lingua(app, {
         defaultLocale: 'de-de',
         path: __dirname + '/i18n',
-        options: {
+        cookie: {
           httpOnly: true
         }
     }));
