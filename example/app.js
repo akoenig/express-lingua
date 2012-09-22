@@ -29,7 +29,10 @@ app.configure(function () {
     // Lingua configuration
     app.use(lingua(app, {
         defaultLocale: 'de-de',
-        path: __dirname + '/i18n'
+        path: __dirname + '/i18n',
+        cookie: {
+          httpOnly: true
+        }
     }));
 
     app.use(express.favicon());
