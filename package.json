@@ -7,6 +7,7 @@
     "url": "git://github.com/akoenig/express-lingua.git"
   },
   "author": "André König <andre.koenig@gmail.com> (http://profile.lochkartenstanzer.de)",
+  "license": "MIT",
   "main": "./lib/lingua.js",
   "directories": {
     "lib": "lib"
