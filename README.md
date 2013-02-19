@@ -22,7 +22,7 @@ Using lingua comes down with four simple steps:
     ...    
 
     // Express app configuration code and lingua init.
-    app.configure(function(){
+    app.configure(function() {
         ...
         app.set('views', __dirname + '/views');
         app.set('view engine', 'ejs');
@@ -109,6 +109,24 @@ Using lingua comes down with four simple steps:
     <a href="?language=en-US">en-US</a>
     ```
 
+You can configure lingua in order to change the name of this parameter.
+
+```javascript
+
+// Express app configuration code and lingua init.
+app.configure(function() {
+    ...
+
+    // Lingua configuration
+    app.use(lingua(app, {
+        defaultLocale: 'en',
+        path: __dirname + '/i18n',
+        storageKey: 'lang' // http://domain.tld/?lang=de
+    }));
+
+    ...
+});
+```
 
 ## Example Application
 
