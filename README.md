@@ -63,14 +63,15 @@ Using lingua comes down with four simple steps:
         }
     ```
 
-3. a) **Use lingua in your views - Static output** - Note that the syntax depends on your template engine. In this example it is: [ejs](http://embeddedjs.com/) and the request comes from a browser which sends 'en' with the HTTP request header.
+3.    
+    a.  **Use lingua in your views - Static output** - Note that the syntax depends on your template engine. In this example it is: [ejs](http://embeddedjs.com/) and the request comes from a browser which sends 'en' with the HTTP request header.
 
     ```html
     <h1><%= lingua.title %></h1> <!-- out: <h1>Hello World</h1> -->
     <p><%= lingua.content.description %></h1> <!-- out: <p>A little description.</p> -->
     ```
 
-3. b) **Use lingua in your views - Dynamic output** - Sometimes it is necessary to handle dynamic data within your express route and pass it to the template. What if your i18n resource includes placeholders ("{key}") within a string where you can put in your dynamic data? Well, it is possible. First of all, look at this i18n resource file:
+    b.  **Use lingua in your views - Dynamic output** - Sometimes it is necessary to handle dynamic data within your express route and pass it to the template. What if your i18n resource includes placeholders ("{key}") within a string where you can put in your dynamic data? Well, it is possible. First of all, look at this i18n resource file:
 
     ```javascript
     // de.json
@@ -102,31 +103,60 @@ Using lingua comes down with four simple steps:
 
     _Note:_ Every i18n resource which contains placeholders like in the example above is a function after you've started the application.
 
-4. **Let the user select a language** - Note that the user's selection is persisted within a cookie. This is an optional step. If you want to let lingua determine the user language from the browser configuration then leave this step out. Anyway, this is a very handy feature for switching the language by a user decision.
+4.  **Let the user select a language** - Note that the user's selection is persisted within a cookie. This is an optional step. If you want to let lingua determine the user language from the browser configuration then leave this step out. Anyway, this is a very handy feature for switching the language by a user decision.
 
     ```html
     <a href="?language=de-DE">de-DE</a>
     <a href="?language=en-US">en-US</a>
     ```
 
-You can configure lingua in order to change the name of this parameter.
+    You can configure lingua in order to change the name of this parameter.
 
-```javascript
+    ```javascript
 
-// Express app configuration code and lingua init.
-app.configure(function() {
-    ...
+    // Express app configuration code and lingua init.
+    app.configure(function() {
+        ...
 
-    // Lingua configuration
-    app.use(lingua(app, {
-        defaultLocale: 'en',
-        path: __dirname + '/i18n',
-        storageKey: 'lang' // http://domain.tld/?lang=de
-    }));
+        // Lingua configuration
+        app.use(lingua(app, {
+            defaultLocale: 'en',
+            path: __dirname + '/i18n',
+            storageKey: 'lang' // http://domain.tld/?lang=de
+        }));
 
-    ...
-});
-```
+        ...
+    });
+    ```
+
+    The cookie lingua uses expires in one year, and includes the httpOnly flag to prevent clientside access from Javascript. You can override these settings by providing a cookieOptions key during configuration.
+
+    ```javascript
+
+    // Express app configuration code and lingua init.
+    app.configure(function() {
+        ...
+
+        // Lingua configuration
+        app.use(lingua(app, {
+            defaultLocale: 'en',
+            path: __dirname + '/i18n',
+            storageKey: 'lang', // http://domain.tld/?lang=de
+            cookieOptions: {
+                domain: '.domain.tld',    // to allow subdomains access to the same cookie, for instance
+                path: '/blog',            // to restrict the language cookie to a path
+                httpOnly: false,          // if you need access to this cookie from javascript on the client
+                expires: new Date(Date.now() + 24 * 60 * 60 * 1000),  // expire in 1 day instead of 1 year
+                secure: true              // for serving over https
+            }
+        }));
+
+        ...
+    });
+    ```
+
+    
+
 
 ## Example Application
 
