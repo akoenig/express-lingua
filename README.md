@@ -175,4 +175,4 @@ You can find a deployed version of this app [here](http://express-lingua-demo.he
 
 ## Author
 
-Copyright (c) 2012, [André König](http://lochkartenstanzer.de) ([Google+](http://profile.lochkartenstanzer.de)) (andre.koenig -[at]- gmail [*dot*] com)
+Copyright (c) 2013, [André König](http://iam.andrekoenig.info)
