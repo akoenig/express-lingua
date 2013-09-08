@@ -139,6 +139,7 @@ Using lingua comes down with four simple steps:
 
         // Lingua configuration
         app.use(lingua(app, {
+            helperPrefix: 't',           // changes the view helper name
             defaultLocale: 'en',
             path: __dirname + '/i18n',
             storageKey: 'lang', // http://domain.tld/?lang=de
