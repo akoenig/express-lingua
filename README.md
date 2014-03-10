@@ -165,9 +165,9 @@ There is an example application at [./example](https://github.com/akoenig/expres
 To run it:
 
     $ cd example
+    $ npm i
     $ node app.js
 
-You can find a deployed version of this app [here](http://lingua-demo.herokuapp.com/).
 
 ## License
 
