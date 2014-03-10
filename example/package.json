@@ -1,9 +1,9 @@
 {
-    "name": "express-lingua-example"
-  , "version": "0.0.3"
-  , "private": true
-  , "dependencies": {
-      "ejs": "0.8.x",
-      "express": "3.0.x"
+  "name": "express-lingua-example",
+  "version": "0.0.3",
+  "private": true,
+  "dependencies": {
+    "ejs": "0.8.x",
+    "express": "4.0.0-rc2"
   }
 }

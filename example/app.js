@@ -20,29 +20,22 @@ var app = express();
 
 // Configuration
 
-app.configure(function () {
-    app.set('port', process.env.PORT || 8080);
+app.set('port', process.env.PORT || 8080);
 
-    app.set('views', __dirname + '/views');
-    app.set('view engine', 'ejs');
+app.set('views', __dirname + '/views');
+app.set('view engine', 'ejs');
 
-    // Lingua configuration
-    app.use(lingua(app, {
-        defaultLocale: 'de-de',
-        path: __dirname + '/i18n'
-    }));
+// Lingua configuration
+app.use(lingua(app, {
+    defaultLocale: 'de-de',
+    path: __dirname + '/i18n'
+}));
 
-    app.use(express.favicon());
-    app.use(express.logger('dev'));
-    app.use(express.bodyParser());
-    app.use(express.methodOverride());
-    app.use(app.router);
-    app.use(express.static(__dirname + '/public'));
-});
+app.use(express.static(__dirname + '/public'));
 
-app.configure('development', function () {
+if ('development' === process.env.NODE_ENV) {
     app.use(express.errorHandler());
-});
+}
 
 // Routes
 

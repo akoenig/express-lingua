@@ -167,7 +167,7 @@ To run it:
     $ cd example
     $ node app.js
 
-You can find a deployed version of this app [here](http://express-lingua-demo.herokuapp.com).
+You can find a deployed version of this app [here](http://lingua-demo.herokuapp.com/).
 
 ## License
 
