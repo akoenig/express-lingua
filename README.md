@@ -1,3 +1,8 @@
+> [!NOTE]
+> This project is preserved as a historical open-source project. It is not actively maintained, and its dependencies or recommended practices may be outdated.
+>
+> I’m keeping it public because it may still be useful as reference material. If you rely on it in production, please review the code carefully and consider maintaining your own fork.
+
 # Lingua
 
 Lingua is a middleware for the Express.js framework that helps you to internationalise your webapp easily. It determines the language of the user agent and pushes the i18n resources to your views.
